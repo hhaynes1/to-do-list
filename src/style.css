@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 15px;
+    background-color: #CAA478;
+    /* border-radius: 1rem; */
+    /* border: 4px solid black; */
+    overflow: auto;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.new-project-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.new-project-expand-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    /* margin: 5px; */
+    padding: 12px;
+    width: 25px;
+    height: 25px;
+    font-size: 1.5rem;
+    background-color: lightgray;
+    border: 2px solid gainsboro;
+    border-radius: 0.5rem;
+    font-weight: 700;
+
+    &:active {
+        border: 2px solid white;
+        background-color: rgba(233, 150, 122, 0.705);
+    }
+}
+
+.project-name-input {
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 0.25rem;
+    visibility: hidden;
+}
+
+.new-project-enter-button {
+    width: 40px;
+    height: 25px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 0.25rem;
+    visibility: hidden;
+}
+
+.new-task-div {
+    display: flex;
+    flex-direction: row;
+    /* gap: 10px; */
+    padding-bottom: 5px;
+    /* width: 230px; */
+    justify-content: space-evenly;
+}
+
+.new-task-input {
+    width: 205px;
+    max-width: 300px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 0.2rem;
+    /* opacity: 90%; */
+}
+
+.new-task-button {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    font-weight: 700;
+    font-size: 1.1rem;
+    /* margin-left: auto; */
+    border-radius: 0.25rem;
+    /* align-self: flex-end; */
+}
+
+.project-minus-button {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    background-color: lightgoldenrodyellow;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 0.25rem;
+    align-self: start;
+    margin: 4px;
+
+    &:hover {
+        background-color: #ff7f50;
+    }
+}
+
+.project {
+    background-color: aquamarine;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.project-div {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    max-width: 250px;
+    height: 240px;
+    border: 1px solid #FFD02F;
+    background-color: #FFFF99;
+    border-radius: 0.1rem;
+    /* margin: 5px; */
+    padding: 2px;
+    overflow: auto;
+    /* align-items: stretch; */
+
+    position: absolute;
+    top: 100px;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.task-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    justify-content: flex-start;
+}
+
+.task-div {
+    display: flex;
+    min-width: 220px;
+    /* width:  auto; */
+    padding: 4px 0;
+    gap: 2px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .task-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 0.25rem;
+    border-color: black;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+} */
+
+.task-title {
+    padding: 5px 0;
+    margin-left: 11px;
+}
+
+.task-minus-button {
+    width: 20px;
+    height: 20px;
+    /* font-sie: 1.2rem; */
+    line-height: 0.5;
+    font-weight: 700;
+    /* border-radius: 0.25rem; */
+    /* color:  white; */
+    background-color: gainsboro;
+    /* border: none; */
+    font-size: 1.2rem;
+}
+
+.task-description {
+    width: 145px;
+    height: auto;
+    font-size: 1rem;
+    text-align: start;
+    text-decoration: underline;
+    text-decoration-color: cornflowerblue;
+    text-decoration-thickness: 2px;
+}
+
+.task-priority-button {
+    width: 40px;
+    height: 20px;
+    margin: 0 1px;
+    background-color: #FF2400;
+    border: none;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
